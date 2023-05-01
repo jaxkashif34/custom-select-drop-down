@@ -56,7 +56,7 @@ export const Select = ({ multiple, options, value, onChange }: SelectProps) => {
               setOpen(true);
               break;
             }
-            const nextIndex = e.code === 'ArrowDown' ? highLightedIndex + 1 : highLightedIndex - 1;
+            const nextIndex = e.code === "ArrowDown" ? highLightedIndex + 1 : highLightedIndex - 1;
             if (nextIndex < 0 || nextIndex >= options.length) break;
             setHighLightedOption(nextIndex);
             break;
